@@ -19,7 +19,7 @@ export const MainAppLayout = ({children}) => {
         <div className="flex h-screen">
             {/** Backdrop - Show on mobile */}
             <div
-                className={`fixed inset-0 z-10 bg-sb-main bg-opacity-75 lg:hidden`}
+                className={`fixed inset-0 z-10 bg-vencru-main bg-opacity-75 lg:hidden`}
                 style={{
                 opacity: 0.5,
                 display: isMobile && showPanel ? 'block' : 'none',
@@ -28,7 +28,7 @@ export const MainAppLayout = ({children}) => {
                 onClick={toggleShowPanel}
             ></div>
 
-            <aside className={`fixed pt-8 pb-4 inset-y-0 z-10 border-r-2 border-vencru-lightgray lg:absolute w-80 ${isMobile && !showPanel && 'hidden'}`}>
+            <aside className={`fixed pt-8 pb-4 inset-y-0 z-10 border-r-2 border-vencru-lightgray lg:absolute bg-vencru-white w-80 ${isMobile && !showPanel && 'hidden'}`}>
                 <div className="flex flex-col h-full space-y-1 overflow-y-hidden hover:overflow-y-auto">
                     <nav  className="space-y-1 px-2 mb-12 mt-4">
                         <SidebarHeader />

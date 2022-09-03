@@ -10,7 +10,7 @@ const SidebarHeader = () => {
             <Icon.Target className='text-vencru-darkgray' />
             <h2 className='text-vencru-black text-xl font-medium'>Untitled UI</h2>
         </div>
-        <Input leftIcon={ <Icon.Search className='text-vencru-darkgray' />} />
+        <Input leftIcon={ <Icon.Search className='text-vencru-darkgray' />} padding = 'py-6' placeholder='Search' />
     </div>
   )
 }

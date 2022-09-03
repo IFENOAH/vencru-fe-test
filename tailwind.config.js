@@ -13,6 +13,10 @@ module.exports = {
           stroke: '#E4E6EB',
           black: '#1D1D1D',
           background: '#F9FAFC',
+          white: '#FFFFFF',
+          purp: '#5F4BCC',
+          darkpurp: '#D6BBFB',
+          lightpurp: '#F9F5FF',
           red: '#FF0000'
         },
       },
@@ -24,9 +28,10 @@ module.exports = {
         },
       },
     },
-    // plugins: [
-    //   require('@tailwindcss/typography'),
-    //   require('@tailwindcss/forms'),
-    //   require('@tailwindcss/line-clamp'),
-    // ],
+    plugins: [
+      // require('@tailwindcss/typography'),
+      // require('@tailwindcss/forms'),
+      // require('@tailwindcss/line-clamp'),
+      // require("daisyui"),
+    ],
 }
