@@ -1,14 +1,14 @@
 import React from 'react'
 
-const RadioInput = ({children}) => {
+const RadioInput = ({children, id}) => {
   return (
-    <div className="flex">
+    <div className="flex cursor-pointer">
         <div className="flex items-center h-5">
-            <input id="helper-radio" aria-describedby="helper-radio-text"
+            <input id={id} aria-describedby="helper-radio-text"
               type="radio" value=""
-              className="w-4 h-4 text-vencru-darkgray bg-vencru-darkgray
-              border-vencru-darkgray focus:ring-vencru-darkgray
-              dark:focus:ring-vencru-darkgray dark:ring-offset-vencru-darkgray" 
+              className="w-4 h-4 text-vencru-purp bg-vencru-white
+              border-vencru-purp focus:ring-vencru-purp
+              dark:focus:ring-vencru-purp dark:ring-offset-vencru-purp" 
             />
         </div>
         {children}

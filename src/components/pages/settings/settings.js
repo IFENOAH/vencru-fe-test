@@ -12,6 +12,17 @@ const Settings = () => {
         <h2 className = 'text-[32px] font-medium'>Settings</h2>
         <span className = 'text-vencru-darkgray'>Manage Your Team And Preferences Here.</span>
       </div>
+      <div className='flex items-center justify-start'>
+        <Button children='My details' roundleft />
+        <Button children='Profile' straight />
+        <Button children='Password' straight />
+        <Button children='Team' straight />
+        <Button children='Plan' straight />
+        <Button children='Billing' straight />
+        <Button children='Notifications' straight />
+        <Button children='Integrations' straight />
+        <Button children='API' roundright />
+      </div>
       <div>
         <header className="flex items-start flex-col border-b-2 border-vencru-lightgray py-4">
           <h2 className="text-lg font-medium">
@@ -32,14 +43,14 @@ const Settings = () => {
             </h4>
           </div>
           <div className='w-2/5 flex flex-col items-start justify-start space-y-4'>
-            <RadioInput children={<div class="ml-2 text-sm">
-                <label for="helper-radio" class="font-normal text-vencru-main">Send to my account email</label>
-                <p id="helper-radio-text" class="text-xs font-normal text-vencru-darkgray">Olivia@untitledui.com</p>
+            <RadioInput id='one' children={<div class="ml-2 text-sm">
+                <label htmlFor="one" className="font-normal text-vencru-main">Send to my account email</label>
+                <p id="one" className="text-xs font-normal text-vencru-darkgray">Olivia@untitledui.com</p>
               </div>} 
             />
 
-            <RadioInput children={<div class="ml-2 text-sm">
-                <label for="helper-radio" class="font-normal text-vencru-main">Send to alternative email</label>
+            <RadioInput id='two' children={<div class="ml-2 text-sm">
+                <label htmlFor='two' className="font-normal text-vencru-main">Send to alternative email</label>
               </div>} 
             />
             <Input leftIcon={<Icon.Mail className='text-vencru-darkgray' />} padding = 'py-2' bgColor= 'background' placeholder='Enter your email' />
@@ -62,7 +73,11 @@ const Settings = () => {
                   <h2 className= 'font-normal'>Visa ending in 1234</h2>
                   <span className='text-sm'>Expiry 06/2024</span>
               </header>
-              <h3 className='text-[14px]'>Set as default</h3>
+              <div className='flex items-center justify-start space-x-2 w-full'>
+                <h3 className='text-[14px]'>Set as default</h3>
+                {/* <Button children='Edit' link /> */}
+                <span className='text-vencru-purp font-normal'>Edit</span>
+              </div>
             </div>} 
           />
 
@@ -72,7 +87,11 @@ const Settings = () => {
                   <h2 className= 'font-normal'>MasterCard ending in 1234</h2>
                   <span className='text-sm'>Expiry 06/2024</span>
               </header>
-              <h3 className='text-[14px]'>Set as default</h3>
+              <div className='flex items-center justify-start space-x-2 w-full'>
+                <h3 className='text-[14px]'>Set as default</h3>
+                {/* <Button children='Edit' link /> */}
+                <span className='text-vencru-purp font-normal'>Edit</span>
+              </div>
             </div>} 
           />
 
