@@ -5,6 +5,7 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import Settings from './components/pages/settings/settings';
+import * as Icon from 'react-feather'
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -13,6 +14,15 @@ root.render(
     <Routes>
       <Route path='/' element = { <App />}>
         <Route path = '/settings' element = { <Settings/>} />
+        <Route
+        index
+        element={
+          <main style={{ padding: "1rem", display: 'flex', flexDirection: 'column' }}>
+            <p className='hidden text-lg font-medium text-vencru-darkgray lg:block'>Please Navigate to settings</p>
+            <div className='block flex space-x-2 text-lg font-medium text-vencru-darkgray lg:hidden'>Please tap the nav Icon and navigate to settings<Icon.CornerRightUp /></div>
+          </main>
+        }
+      />
       </Route>
     </Routes>
     </BrowserRouter>
