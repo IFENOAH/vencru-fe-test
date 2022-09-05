@@ -4,18 +4,18 @@ const Button = ({imgBefore, children, imgAfter, link, color, roundleft, roundrig
 
   return (
     <button className={`flex items-center justify-between ${link ? '' : 'bg-vencru-white'}
-        rounded-none
-        ${rounded ? 'rounded' : ''}
-        ${link ? '' : 'border border-vencru-stroke'} ${link ? '' : 'py-[10px]'}
-        ${roundleft ? 'rounded-l-lg' : 'rounded-none'}
-        ${roundright ? 'rounded-r-lg' : 'rounded-none'}
-        `}
+      rounded-none
+      ${rounded ? 'rounded-lg' : ''}
+      ${link ? '' : 'border border-vencru-stroke px-[20px]'} ${link ? '' : 'py-[10px]'}
+      ${roundleft ? 'rounded-l-lg' : ''}
+      ${roundright ? 'rounded-r-lg' : ''}
+      `}
     >
-        {imgBefore}
-        <h2 className={` ${color ? color : 'text-vencru-darkgray'} ${small ? 'px-2' : 'px-[20px]'}  text-sm `} >
-            {children}
-        </h2>
-        {imgAfter}
+      {imgBefore}
+      <h2 className={` ${color ? color : 'text-vencru-darkgray'} ${small ? '' : 'px-2'}  text-sm `} >
+          {children}
+      </h2>
+      {imgAfter}
     </button>
   )
 }

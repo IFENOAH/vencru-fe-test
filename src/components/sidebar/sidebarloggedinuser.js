@@ -3,7 +3,7 @@ import * as Icon from 'react-feather';
 
 const SidebarLoggedinUser = () => {
   return (
-    <div className="w-full inline-flex space-x-3 px-4 divide-y divide-vencru-lightgray">
+    <div className="w-full inline-flex space-x-3 pt-2 mt-2 px-4">
         <div
             className="w-12 h-12 rounded-full flex-shrink-0"
             style={{

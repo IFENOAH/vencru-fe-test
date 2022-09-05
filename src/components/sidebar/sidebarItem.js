@@ -1,9 +1,12 @@
 import { cloneElement } from "react"
+import { useLocation } from "react-router-dom"
 
 export const SideBarItem = ({children, url, icon, number}) => {
 
+    const location = useLocation()
+
     return (
-        <a href={url} className="w-full flex items-center justify-between px-4 py-3">
+        <a href={url} className={`w-full flex items-center rounded justify-between px-4 py-2 ${location.pathname === url ? "bg-vencru-stroke" : ""}`}>
             <div className="flex items-center justify-between">
                 <span aria-hidden="true">
                 {icon &&

@@ -19,7 +19,7 @@ const Checkbox = ({node, onClickProp, id}) => {
         </div>
         <input id={id} type="checkbox" value="" className="w-4 h-4 border rounded-full text-vencru-purp bg-vencru-white
             border-vencru-purp focus:ring-vencru-purp dark:focus:ring-vencru-purp dark:ring-offset-vencru-purp
-            dark:border-vencru-darkgray" 
+            dark:border-vencru-stroke" 
         />
     </label>
 

@@ -7,8 +7,8 @@ const RadioInput = ({children, id}) => {
             <input id={id} aria-describedby="helper-radio-text"
               type="radio" value=""
               className="w-4 h-4 text-vencru-purp bg-vencru-white
-              border-vencru-purp focus:ring-vencru-purp
-              dark:focus:ring-vencru-purp dark:ring-offset-vencru-purp" 
+              border-vencru-stroke focus:ring-vencru-purp
+              dark:focus:ring-vencru-stroke dark:ring-offset-vencru-stroke" 
             />
         </div>
         {children}

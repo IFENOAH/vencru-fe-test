@@ -17,7 +17,11 @@ module.exports = {
           purp: '#5F4BCC',
           darkpurp: '#D6BBFB',
           lightpurp: '#F9F5FF',
-          red: '#FF0000'
+          red: '#FF0000',
+          lightred: '#FAA0A0',
+          lightgreen: '#ECFDF3',
+          green: '#2DC07A',
+          darkgreen: '#1B895A',
         },
       },
       extend: {
